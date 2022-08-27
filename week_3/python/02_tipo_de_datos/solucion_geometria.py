@@ -1,5 +1,5 @@
 # Rectangulo
-base = 5
+base = int(input('ingrese la longitud de la base: '))
 altura = 3
 ancho = 2
 print('dimensiones: base: {}, altura: {}, ancho: {}'.format(base, altura, ancho))
