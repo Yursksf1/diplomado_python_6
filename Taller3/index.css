@@ -1,0 +1,93 @@
+body {
+    margin:00;
+    padding:00;
+    background: #bcd6d5;
+}
+
+.name {
+    width: 100%;
+    height: 300px;
+    background: #0d6ff0;
+}
+.name .content{
+   width: 50%;
+   height: 50%;
+   position: absolute;
+   left:25%;
+}
+.name .content .p1{
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+    
+ 
+.name .content .p2 {
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+
+.name .img{
+ position: absolute;
+ top: 8%;
+ right: 5%;
+ width: 180px;
+ height: 180px;
+ border-radius: 180%;
+ overflow: hidden;
+
+}
+
+.name .img  img{
+
+     width: 180px;
+     height: 320;
+  
+}
+
+
+
+
+.info  {
+width:90%;
+height:auto;
+background: #0d6ff0;
+margin: 5% auto;
+padding: 20px;
+border-radius: 20px;
+}
+
+.info  .tituloseccion {
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight:bolder;
+    border-bottom: 10px #bcd6d5 solid;
+
+}
+
+.info .tituloinfo{
+    
+   color: whitesmoke;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: bolder;
+   font-size: 20px;
+   display: inline; 
+   margin-right: 20px; 
+}
+
+
+.info .infoinfo{
+    
+    color: rgb(15, 14, 14);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    display: inline;
+    margin-right: 20px;
+ 
+ }
+ 
