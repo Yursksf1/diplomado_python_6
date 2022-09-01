@@ -36,3 +36,36 @@ print('q', q)
 print('P y Q es: {}'.format(p and q))
 print('P o Q es: {}'.format(p or q))
 
+
+"""
++ * - 
+de lunes a vierens --> descuento de pasta y arroz 
+marte --> no hay descuento
+Miercoles --> de descuento frutas y verduras  (20 %)
+Jueves --> descuento pollo y carne ( 15 %)
+viernes --> descuento de licores y cerverza 
+fines de semana --> descuento en pañales 
+
+la compra es de:
+producto -- valor base
+arroz: 10.000  
+carne: 30.000
+pollo: 20.000
+licor: 59.000
+pañales: 50.000
+pañitos humedos: 7800
+pastas: 15000
+mazanas: 5000
+pera: 5000
+kiwi: 7800
+fresa: 4500
+
+
+- que dia de la semana me conviente hacer las compras. 
+
+teniendo en cuenta los descuentos.
+y que si soy cliente frecuente tendre un 5% de descuento.
+
+- cuanto fue el valor total de la compra. 
+"""
+
