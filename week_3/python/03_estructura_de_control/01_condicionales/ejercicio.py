@@ -51,7 +51,7 @@ producto -- valor base
 arroz: 10.000  
 carne: 30.000
 pollo: 20.000
-licor: 59.000
+licor:  .000
 pañales: 50.000
 pañitos humedos: 7800
 pastas: 15000
