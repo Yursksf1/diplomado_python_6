@@ -2,7 +2,7 @@
 Persona = input("Ingrese su nombre: ")
 print("\nBuen día {}".format(Persona), "Soy su cajero automático y tengo el gusto de atenderlo\n")
 
-Options = int(input('''Seleccione la opción que desea realizar: 
+Options = int(input('''Seleccione la opción que desea realizar:
 1. Retirar dinero
 2. Consignar dinero
 3. Pago de facturas
@@ -15,11 +15,19 @@ if Options == 1:
         if type(Nequi) == int:
             Monto = int(input("Ahora ingrese el monto que desea retirar (Sin puntos)\n---> $ "))
             if type(Monto) == int:
-                COP = int(Retiro/1000)
+                COP = int(Monto/1000)
                 Denominacion = [100, 50, 20, 10]
                 resto = COP
-                for i in range (len(Denominacion)):
-                        b = resto//Denominacion[i]
-                        if b>0:
-                            print (b, "billetes de ", Denominacion[i], "pesos colombianos")
-                            resto%=Denominacion[i]
+                for i in range(len(Denominacion)):
+                    b = resto//Denominacion[i]
+                    # vamos a hacer una validacion del cambio
+                    if b > 0:
+                        is_zero_result = resto - (b * Denominacion[i]) == 0
+                        is_last_denomination = Denominacion[i] == Denominacion[-1]
+                        is_invalid = is_zero_result and not is_last_denomination
+                        if is_invalid:
+                            b = b - 1
+                    if b > 0:
+                        plural = 'billetes' if b > 1 else 'billete'
+                        print(b, "{} de ".format(plural), "{}.000".format(Denominacion[i]), " pesos colombianos")
+                        resto = resto - (b*Denominacion[i])
