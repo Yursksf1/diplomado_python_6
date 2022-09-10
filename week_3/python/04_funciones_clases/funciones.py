@@ -19,7 +19,7 @@ def generar_saludo_nombre(nombre=None):
     return "hola {} mucho gusto".format(nombre)
 
 imprimir()
-imprimir_nombre('Juan')
+imprimir_nombre(nombre='Juan')
 saludo = genera_saludo()
 print(saludo)
 saludo_con_nombre = generar_saludo_nombre('Marcos')
@@ -53,3 +53,19 @@ print(resultado)
 resultado = dividir(6, 0)
 print(resultado)
 
+'''
+Ejercicio: 
+1) hacer una calculadora en python 
+recibe 2 parametros a operar 
+def suma(a, b):
+    return a + b
+    
+llamar e imprimir el resultado 
+(suma, resta, multoplicacion, division) 
+opcional ( potencia, raiz n-esima)
+
+2) solicitar al usuario por consola haciendo uso del imput para ingresar los valores a operar 
+ en la calculadora definida en el punto 1
+ 
+3) hace un menu de opciones. 
+'''
