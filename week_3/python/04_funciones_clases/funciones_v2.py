@@ -115,3 +115,40 @@ agregar una nueva funcionalidad.
     - niños que no estan en la lista recben solo 2 o 3 regalos. y se determinan de forma aleatoria. 
         (consejo: busque la libreria `random` para hallar aleatorios) 
 '''
+print('************')
+import random
+
+niños1 = {
+    'carlos': ['balon', 'carrito a contro remoto', 'karaoke'],
+    'sofia': ['patines', 'pelota de futbol', 'piano', 'muñeca', 'cocinita'],
+    'cesar': ['carro', 'guitarra', 'ropa', 'celuar'],
+    'juan': ['carro', 'balon', 'ropa', 'karaoke'],
+    'alex': ['piano', 'guitarra', 'balon', 'juego de concina'],
+    'daniela': ['balon', 'karaoke', 'piano', 'celuar'],
+}
+
+niñosBuenos = ['cesar', 'sofia']
+niñosTraviesos = ['juan', 'daniela']
+
+def navidad(**kwargs):
+    print('Los siguientes niños reciben regalos')
+    for clave, valor in kwargs.items():
+        if clave in niñosBuenos:
+            print(clave, ":", ", ".join(valor))
+        elif clave in niñosTraviesos:
+            print(clave, 'no recibe regalo')
+        # else:
+        #     lista_de_regalos = valor
+        #     regalo_1 = random.choice(lista_de_regalos)
+        #     lista_de_regalos.remove(regalo_1)
+        #     regalo_2 = random.choice(lista_de_regalos)
+        #     print(clave, 'solo recibiras: ', "{}, {}".format(regalo_1, regalo_2))
+        else:
+            lista_de_regalos = valor
+            random.shuffle(lista_de_regalos)
+            print(clave, 'solo recibiras: ', lista_de_regalos[0:2])
+
+navidad(**niños1)
+
+
+
