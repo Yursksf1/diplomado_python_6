@@ -85,7 +85,33 @@ print('resultado', resultado)
     la funcion debe recibir 2 parametros
     lista de niños buenos, y lista de niño que se portaron mal
     tambien si el niño se porto bien recibira el regalo esperado. 
+'''
+# propuesta de solucion
+
+niños1 = {'carlos': 'balon', 'sofia': 'patines', 'cesar': 'carro'}
+niñosBuenos = ['carlos', 'sofia']
 
 
+def navidad(**kwargs):
+    print('Los siguientes niños reciben regalos')
+    for clave, valor in kwargs.items():
+        if clave in niñosBuenos:
+            print(clave, ":", valor)
+        else:
+            print(clave, 'no recibi regalo')
 
+
+navidad(**niños1)
+
+# reto:
+'''
+En base a esta propuesta de codigo. 
+agregar una nueva funcionalidad.
+ 
+- los niños puede pedir dede 3 regalos hasta maximo 5 regalos.
+- una validacion sera dada por 3 listas.
+    - niños que se portaron muy bien --> recbien todos los regalos
+    - niños que se portaron mal --> no reciben ningun regalo
+    - niños que no estan en la lista recben solo 2 o 3 regalos. y se determinan de forma aleatoria. 
+        (consejo: busque la libreria `random` para hallar aleatorios) 
 '''
