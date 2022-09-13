@@ -14,4 +14,12 @@ for i in range(2, 100):
         contador = contador + 1
         print(contador, i)
 
+numeros = 0
+contador = 0
+while contador < 100:
+    numeros = numeros + 1
+    if es_primo(numeros):
+        contador = contador + 1
+        print(numeros)
+
 
