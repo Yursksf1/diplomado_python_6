@@ -8,5 +8,6 @@ from myapp import views
 
 app_name = 'myapp'
 urlpatterns = [
-    path('', views.index, name="home")
+    path('', views.index, name="home"),
+    path('vista_uno', views.vista_uno, name="vista_uno")
 ]
