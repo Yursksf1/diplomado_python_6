@@ -1,8 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <h1> Aca va el titulo de mi pagina </h1>
@@ -15,5 +18,10 @@
         <li> Pagina cinco <a href="{% url 'myapp:vista_con_template' %}"> vista con template  </a></li>
         <li> Pagina seis <a href="{% url 'myapp:vista_generica' %}"> vista generica  </a></li>
     </ul>
+    <div class="ejemplo">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="{% static 'img/icon-youtube.png' %}" title="Youtube">
+        </a>
+    </div>
 </body>
 </html>
