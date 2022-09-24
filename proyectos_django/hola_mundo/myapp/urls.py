@@ -20,5 +20,6 @@ urlpatterns = [
 
     path('rec_1', TemplateView.as_view(template_name='rec_1.html'), name='rec_1'),
     path('rec_2', TemplateView.as_view(template_name='rec_2.html'), name='rec_2'),
+    path('rec_3', views.rec_3, name='rec_3'),
 
 ]

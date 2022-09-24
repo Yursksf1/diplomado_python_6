@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from myapp.models import Servicio
 
 # Create your views here.
 def numeros_1_100(request):
@@ -63,5 +64,19 @@ def ejemplo_numeros(request):
 
     context = {
         "result": suma
+    }
+    return render(request, template_name=template_name, context=context)
+
+
+def rec_3(request):
+    template_name = 'rec_3.html'
+    servicios = Servicio.objects.all()
+
+    for servicio in servicios:
+        print('servicio', servicio)
+
+    context = {
+        'titulo': 'Lista de servicios',
+        'servicios': servicios
     }
     return render(request, template_name=template_name, context=context)
